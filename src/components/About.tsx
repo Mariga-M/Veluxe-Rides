@@ -3,8 +3,8 @@ import { Award, Users, Globe, TrendingUp, CheckCircle } from 'lucide-react';
 
 const About = () => {
   const stats = [
-    { icon: Award, number: '15+', label: 'Years of Excellence' },
-    { icon: Users, number: '5000+', label: 'Satisfied Clients' },
+    { icon: Award, number: '7+', label: 'Years of Excellence' },
+    { icon: Users, number: '1000+', label: 'Satisfied Clients' },
     { icon: Globe, number: '50+', label: 'Countries Served' },
     { icon: TrendingUp, number: '500+', label: 'Vehicles Sold' }
   ];
@@ -83,7 +83,7 @@ const About = () => {
             {/* Floating Stats Card */}
             <div className="absolute -bottom-8 -left-8 bg-black border border-gray-800 rounded-xl p-6 shadow-2xl">
               <div className="text-center">
-                <div className="text-3xl font-bold text-yellow-400 mb-1">15+</div>
+                <div className="text-3xl font-bold text-yellow-400 mb-1">7+</div>
                 <div className="text-sm text-gray-400">Years of Trust</div>
               </div>
             </div>

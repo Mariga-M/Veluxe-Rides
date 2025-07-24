@@ -115,9 +115,9 @@ const Home = () => {
               className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto"
             >
               {[
-                { icon: Award, number: '500+', label: 'Premium Vehicles' },
-                { icon: Shield, number: '15+', label: 'Years Experience' },
-                { icon: Star, number: '5000+', label: 'Happy Clients' }
+                { icon: Award, number: '100+', label: 'Premium Vehicles' },
+                { icon: Shield, number: '7+', label: 'Years Experience' },
+                { icon: Star, number: '1000+', label: 'Happy Clients' }
               ].map((stat, index) => {
                 const IconComponent = stat.icon;
                 return (

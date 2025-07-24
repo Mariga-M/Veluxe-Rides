@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Facebook, Instagram, Twitter, Youtube, Phone, Mail, MapPin, Send } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Youtube, Phone, Mail, MapPin, Send, CheckCircle } from 'lucide-react';
 
 const Footer = () => {
   const [email, setEmail] = React.useState('');
+  const [isSubscribed, setIsSubscribed] = useState(false);
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
+    
+
+    setIsSubscribed(true);
     // Handle newsletter subscription
     setEmail('');
+    setTimeout(() => setIsSubscribed(false), 3000);
   };
 
   return (
@@ -167,6 +172,20 @@ const Footer = () => {
                 Subscribe to get the latest luxury car news and exclusive offers.
               </p>
             </div>
+
+              {isSubscribed ? (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="bg-green-100 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6 flex items-center justify-center"
+            >
+              <CheckCircle className="w-6 h-6 text-green-600 mr-3" />
+              <span className="text-green-700 dark:text-green-400 font-semibold">
+                Thank you for subscribing! Check your email for confirmation.
+              </span>
+            </motion.div>
+          ) : (
+
             <form onSubmit={handleSubscribe} className="flex w-full md:w-auto">
               <input
                 type="email"
@@ -186,6 +205,7 @@ const Footer = () => {
                 Subscribe
               </motion.button>
             </form>
+          )}
           </div>
         </motion.div>
 
