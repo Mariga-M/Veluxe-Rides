@@ -54,21 +54,21 @@ const Hero = () => {
               <div className="bg-yellow-400/20 p-3 rounded-full mb-3">
                 <Award className="w-6 h-6 text-yellow-400" />
               </div>
-              <div className="text-3xl font-bold text-white mb-1">500+</div>
+              <div className="text-3xl font-bold text-white mb-1">200+</div>
               <div className="text-gray-400">Premium Vehicles</div>
             </div>
             <div className="flex flex-col items-center">
               <div className="bg-yellow-400/20 p-3 rounded-full mb-3">
                 <Shield className="w-6 h-6 text-yellow-400" />
               </div>
-              <div className="text-3xl font-bold text-white mb-1">15+</div>
+              <div className="text-3xl font-bold text-white mb-1">7+</div>
               <div className="text-gray-400">Years Experience</div>
             </div>
             <div className="flex flex-col items-center">
               <div className="bg-yellow-400/20 p-3 rounded-full mb-3">
                 <Star className="w-6 h-6 text-yellow-400" />
               </div>
-              <div className="text-3xl font-bold text-white mb-1">5000+</div>
+              <div className="text-3xl font-bold text-white mb-1">1000+</div>
               <div className="text-gray-400">Happy Clients</div>
             </div>
           </div>
